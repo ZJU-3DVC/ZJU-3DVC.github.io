@@ -34,9 +34,29 @@
 <body>
     <div class="container" id="main">
         <div class="row">
+
             <h2 class="col-md-12 text-center">
-                <b>UrbanGIRAFFE</b>: Representing Urban Scenes as  Compositional </br> Generative Neural Feature Fields</br>
+                <b>UrbanGIRAFFE</b>: Representing Urban Scenes as Compositional </br> Generative Neural Feature
+                Field</br>
+                <!-- <h4><strong>Code</strong></h4> -->
+                </a>
             </h2>
+
+
+
+            <h3 class="col-md-12 text-center">
+                <a href="https://github.com/freemty/urbanGIRAFFE">
+                    <image src="../urbanGIRAFFE/assets/img/urbangiraffe_logo.png" height="120px">
+                </a>
+                &#20;&#20;&#20;&#20;
+                <b>ICCV</b>2023
+
+
+                <!-- <h4><strong> by Midjourney</strong></h4> -->
+            </h3>
+
+
+
         </div>
         <div class="row">
             <div class="col-md-12 text-center">
@@ -54,9 +74,9 @@
                         <!-- </br>Zhejiang University -->
                     </li>
                     <li>
-                        
+
                         Hanlei Guo
-<!--                     
+                        <!--                     
                         </br>Zhejiang University -->
                     </li>
                     <!-- <br> -->
@@ -80,7 +100,7 @@
                     </li>
                     <br>
                     <li>
-                     Zhejiang University
+                        Zhejiang University
                     </li>
                 </ul>
             </div>
@@ -96,11 +116,14 @@
                                 <h4><strong>Paper</strong></h4>
                         </a>
                     </li>
+
+
                     <li>
 
-                        <image src="../urbanGIRAFFE/assets/img/github.png" height="60px">
-                            <h4><strong>Code</br>(Coming Soon)</strong></h4>
-
+                        <a href="https://github.com/freemty/urbanGIRAFFE">
+                            <image src="../urbanGIRAFFE/assets/img/github.png" height="60px">
+                                <h4><strong>Code</strong></h4>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -112,8 +135,9 @@
                 <video id="v0" width="100%" autoplay loop muted controls>
                     <source src="../urbanGIRAFFE/assets/videos/teaser.mp4" type="video/mp4" />
                 </video>
-                 <div class="col-md-10 col-md-offset-1 text-center">
-                <b>Controllable 3D-aware Image Synthesis (top) & Panoptic Prior (bottom)</b></div>
+                <div class="col-md-10 col-md-offset-1 text-center">
+                    <b>Controllable 3D-aware Image Synthesis (top) & Panoptic Prior (bottom)</b>
+                </div>
 
 
             </div>
@@ -126,41 +150,51 @@
                 </h2>
                 <image src="../urbanGIRAFFE/assets/img/method.png" class="img-responsive" alt="overview"><br>
                     <p class="text-justify">
-Generating photorealistic images with controllable camera pose and scene contents is essential for many applications
-including AR/VR and simulation. Despite the fact that rapid progress has been made in 3D-aware generative models, most
-existing methods focus on object-centric images and are not applicable to generating urban scenes for free camera
-viewpoint control and scene editing.
-To address this challenging task, we propose UrbanGIRAFFE, which uses a coarse 3D panoptic prior, including the layout
-distribution of uncountable stuff and countable objects, to guide a 3D-aware generative model. Our model is
-compositional and controllable as it breaks down the scene into stuff, objects, and sky. Using stuff prior in the form
-of semantic voxel grids, we build a conditioned stuff generator that effectively incorporates the coarse semantic and
-geometry information. The object layout prior further allows us to learn an object generator from cluttered scenes.
-With proper loss functions, our approach facilitates photorealistic 3D-aware image synthesis with diverse
-controllability, including large camera movement, stuff editing, and object manipulation.
-We validate the effectiveness of our model on both synthetic and real-world datasets, including the challenging
-KITTI-360 dataset.
+                        Generating photorealistic images with controllable camera pose and scene contents is essential
+                        for many applications
+                        including AR/VR and simulation. Despite the fact that rapid progress has been made in 3D-aware
+                        generative models, most
+                        existing methods focus on object-centric images and are not applicable to generating urban
+                        scenes for free camera
+                        viewpoint control and scene editing.
+                        To address this challenging task, we propose UrbanGIRAFFE, which uses a coarse 3D panoptic
+                        prior, including the layout
+                        distribution of uncountable stuff and countable objects, to guide a 3D-aware generative model.
+                        Our model is
+                        compositional and controllable as it breaks down the scene into stuff, objects, and sky. Using
+                        stuff prior in the form
+                        of semantic voxel grids, we build a conditioned stuff generator that effectively incorporates
+                        the coarse semantic and
+                        geometry information. The object layout prior further allows us to learn an object generator
+                        from cluttered scenes.
+                        With proper loss functions, our approach facilitates photorealistic 3D-aware image synthesis
+                        with diverse
+                        controllability, including large camera movement, stuff editing, and object manipulation.
+                        We validate the effectiveness of our model on both synthetic and real-world datasets, including
+                        the challenging
+                        KITTI-360 dataset.
                     </p>
             </div>
         </div>
 
 
         <h2 class="col-md-12 text-center">
-                Viewpoint Control on KITTI-360
+            Viewpoint Control on KITTI-360
         </h2>
 
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-            <h3>
+                <h3>
                     Move Forward
-            </h3>
-            </video>
+                </h3>
+                </video>
                 <video id="v0" width="100%" autoplay loop muted controls>
                     <source src="../urbanGIRAFFE/assets/videos/move_forward_video_final.mp4" type="video/mp4" />
-            </video>     
+                </video>
 
-            <h3>
-                Camera Pose Interpolation
-            </h3>
+                <h3>
+                    Camera Pose Interpolation
+                </h3>
                 </video>
                 <video id="v0" width="100%" autoplay loop muted controls>
                     <source src="../urbanGIRAFFE/assets/videos/interpolate_camera_video_final.mp4" type="video/mp4" />
@@ -173,34 +207,34 @@ KITTI-360 dataset.
         <h2 class="col-md-12 text-center">
             Stuff Editing on KITTI-360
         </h2>
-        
+
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
 
-            <h3>
-                Road to Grass
-            </h3>
-            </video>
-            <video id="v0" width="100%" autoplay loop muted controls>
-                <source src="../urbanGIRAFFE/assets/videos/road2grass_video_final.mp4" type="video/mp4" />
-            </video>
+                <h3>
+                    Road to Grass
+                </h3>
+                </video>
+                <video id="v0" width="100%" autoplay loop muted controls>
+                    <source src="../urbanGIRAFFE/assets/videos/road2grass_video_final.mp4" type="video/mp4" />
+                </video>
 
-            <h3>
-                Building to Tree 
-            </h3>
-            </video>
-            <video id="v0" width="100%" autoplay loop muted controls>
-                <source src="../urbanGIRAFFE/assets/videos/building2tree_video_final.mp4" type="video/mp4" />
-            </video>
-    
-            <h3>
-                Building Lower
-            </h3>
-            </video>
-            <video id="v0" width="100%" autoplay loop muted controls>
-                <source src="../urbanGIRAFFE/assets/videos/building_lower_video_final.mp4" type="video/mp4" />
-            </video>
-           
+                <h3>
+                    Building to Tree
+                </h3>
+                </video>
+                <video id="v0" width="100%" autoplay loop muted controls>
+                    <source src="../urbanGIRAFFE/assets/videos/building2tree_video_final.mp4" type="video/mp4" />
+                </video>
+
+                <h3>
+                    Building Lower
+                </h3>
+                </video>
+                <video id="v0" width="100%" autoplay loop muted controls>
+                    <source src="../urbanGIRAFFE/assets/videos/building_lower_video_final.mp4" type="video/mp4" />
+                </video>
+
             </div>
         </div>
 
@@ -209,43 +243,43 @@ KITTI-360 dataset.
         <h2 class="col-md-12 text-center">
             Object Editing on KITTI-360
         </h2>
-        <div class="row">   
+        <div class="row">
             <h3 class="col-md-8 col-md-offset-2">
                 </video>
                 <video id="v0" width="100%" autoplay loop muted controls>
                     <source src="../urbanGIRAFFE/assets/videos/object_editing_video_final.mp4" type="video/mp4" />
                 </video>
-        </h3>
-
-        <h2 class="col-md-12 text-center">
-            Controllable Image Synthesis on CLEVR-W
-        </h2>
-        <div class="row">
-            <h3 class="col-md-8 col-md-offset-2">
-                </video>
-                <video id="v0" width="100%" autoplay loop muted controls>
-                    <source src="../urbanGIRAFFE/assets/videos/clevr_video_final.mp4" type="video/mp4" />
-                </video>
             </h3>
-            
+
+            <h2 class="col-md-12 text-center">
+                Controllable Image Synthesis on CLEVR-W
+            </h2>
+            <div class="row">
+                <h3 class="col-md-8 col-md-offset-2">
+                    </video>
+                    <video id="v0" width="100%" autoplay loop muted controls>
+                        <source src="../urbanGIRAFFE/assets/videos/clevr_video_final.mp4" type="video/mp4" />
+                    </video>
+                </h3>
+
 
                 <h3 class="col-md-9 col-md-offset-1">
                     Citation
                 </h3>
-        <div class="row">
-            <div class="col-md-9 col-md-offset-1">
-    <pre style="background-color:#EAEAEA">
+                <div class="row">
+                    <div class="col-md-9 col-md-offset-1">
+                        <pre style="background-color:#EAEAEA">
 <code>@article{Yang2023,
 author = {Yuanbo Yang and Yifei Yang and Hanlei Guo and Rong Xiong and Yue Wang and Yiyi Liao},
 title = {UrbanGIRAFFE: Representing Urban Scenes as Compositional Generative Neural Feature Fields},
 journal = {ARXIV},
 year = {2023}}</code></pre>
+                    </div>
                 </div>
             </div>
+
+
         </div>
-
-
-</div>
 
         <div class="row">
             <div class="col-md-9 col-md-offset-1">
